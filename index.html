@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+body{
+    background-color: rgb(31, 31, 31);
+}
+ 
+.judul{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  margin-top: -20px;
+ 
+}
+ 
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+}
+ 
+.container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width:fit-content;
+    height: fit-content;
+    border: 5px solid #1f1f1f;
+    background-color: aliceblue;
+    padding: 20px;
+    margin-top: 60px;
+    border-radius: 1rem;
+}
+ 
+td{
+  padding: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+}
+ 
+.foto1{
+    height:305px;
+    width: 200px;
+    margin: auto;
+    margin-right: 20px;
+    object-fit: cover;
+}
+.satu{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+    background-color:  rgb(46, 59, 175);
+    margin-top: 50px;
+    padding:50px;
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 70%;
+    border-radius: 1rem;
+}
+ 
+tr{
+  background-color: rgb(214, 255, 235);
+}
+ 
+button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+ 
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+ 
+button span:after {
+  content: '\203A\203A';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+ 
+button:hover span {
+  padding-right: 25px;
+}
+ 
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+    </style>
+    <title>Data Diri</title>
+</head>
+<body>
+<div class="satu">
+  <div class="judul"><h1>BIODATA</h1></div>
+   <div class="container">
+    <img src="./profil2.jpg" class="foto1" style="border: 5px solid #1f1f1f; border-radius: 1rem;">
+    <table>
+        <tr>
+          <td>Nama Lengkap</td>
+          <td>Muhammad Rayhan Raffi Pratama</td>
+        </tr>
+        <tr>
+            <td>Tempat tanggal lahir</td>
+            <td>Surabaya, 18 Desember 2000</td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>Laki Laki</td>
+          </tr>
+          <tr>
+            <td>Agama</td>
+            <td>Islam</td>
+          </tr>
+          <tr>
+            <td>Alamat</td>
+            <td>Wonosari Wetan Baru Sekolahan 31</td>
+          </tr>
+          <tr>
+            <td>Status</td>
+            <td>Belum menikah</td>
+          </tr>
+          <tr>
+            <td>Pekerjaan</td>
+            <td>Mahasiswa</td>
+          </tr>
+          <tr>
+            <td>Kewarganegaraan</td>
+            <td>Indonesia</td>
+          </tr>
+          <tr>
+            <td>Riwayat & hobi</td>
+           <td>Ingin tau riwayat dan hobiku? <a href="page2.html"><button><span>klik disini</span></button></a></td>
+         </tr>
+     </table>
+  </div></div>
+</body>
+</html>
